@@ -1,14 +1,10 @@
 
 
-user_input = int(input("Enter a grade from 0 to 100: "))
+user_input = input("Enter a String: ")
+new_string = ''
 
-if user_input >= 90:
-    print("Your grade is an A")
-elif user_input >= 80:
-    print("Your grade is a B")
-elif user_input >= 70:
-    print("Your grade is a C")
-elif user_input >= 60:
-    print("Your grade is a D")
-else:
-    print("Your grade is a F")
+for i in range(len(user_input)):
+
+    new_string += user_input[len(user_input)-1-i]
+
+print(new_string)
